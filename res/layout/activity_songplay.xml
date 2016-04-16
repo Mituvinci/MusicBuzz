@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundreal"
+    tools:context="com.mitu.musicbuzz.SongplayActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/muplay" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:id="@+id/forwardbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/buttonPlay"
+        android:layout_alignBottom="@+id/buttonPlay"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/buttonPlay"
+        android:background="@drawable/forward" />
+
+    <Button
+        android:id="@+id/backwordbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/buttonPlay"
+        android:layout_alignBottom="@+id/buttonPlay"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/buttonPlay"
+        android:background="@drawable/backword" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/pause" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/forwardbtn"
+        android:layout_alignBottom="@+id/forwardbtn"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/forwardbtn"
+        android:background="@drawable/next" />
+
+    <Button
+        android:id="@+id/previousbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/backwordbtn"
+        android:layout_alignBottom="@+id/backwordbtn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/previous" />
+
+    <TextView
+        android:id="@+id/songtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="              TextView" />
+
+</RelativeLayout>
